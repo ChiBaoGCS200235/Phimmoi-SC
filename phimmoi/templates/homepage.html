@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+ <!-- cards-container -->
+
+    <!-- Phim đề xuất -->
+    <section class="product">
+        <h2 class="product-category">Phim Đề Xuất</h2>
+        <div class="product-container">
+            {% for item in m %}
+            <div class="product-card">
+                <div class="product-image">
+                    <img width="200" height="400" src="{{item.picture}}" class="product-thumb" alt="">
+                    <button class="card-btn"><a style="text-decoration: none;" href="{% url 'watch' item.id %}">Xem Phim</a></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">{{item.movieName}}</h2>
+                    <p class="product-short-des">{{item.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        
+    </section>
+
+
+     <!--Phim Kinh dị  -->
+
+    <section class="product">
+        <h2 class="product-category">Phim Kinh Dị</h2>
+        <div class="product-container">
+        {% for item in h %}
+        <div class="product-card">
+                <div class="product-image">
+                    <img width="200" height="400" src="{{item.picture}}" class="product-thumb" alt="">
+                    <button class="card-btn"><a style="text-decoration: none;" href="{% url 'watch' item.id %}">Xem Phim</a></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">{{item.movieName}}</h2>
+                    <p class="product-short-des">{{item.description}}</p>
+                </div>
+            </div>
+        {% endfor %}
+        
+    </section>
+
+    <!-- Anime -->
+    <section class="product">
+        <h2 class="product-category">Anime</h2>
+        <div class="product-container">
+        {% for item in a %}
+        <div class="product-card">
+                <div class="product-image">
+                    <img width="200" height="400" src="{{item.picture}}" class="product-thumb" alt="">
+                    <button class="card-btn"><a style="text-decoration: none;" href="{% url 'watch' item.id %}">Xem Phim</a></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">{{item.movieName}}</h2>
+                    <p class="product-short-des">{{item.description}}</p>
+                </div>
+            </div>
+        {% endfor %}
+        
+    </section>
+    </section>
+
+{% endblock %}

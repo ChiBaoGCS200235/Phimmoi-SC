@@ -1,0 +1,50 @@
+
+.Hentai-img{
+   width: auto;
+   height: auto;
+   position: relative;
+   margin-bottom: 25px;
+
+}
+.chapter-tag{
+   position: absolute;
+   background: #fff;
+   padding: 5px;
+   border-radius: 5px;
+   color: #ff7d7d;
+   right: 10px;
+   top: 10px;
+   text-transform: capitalize;
+}
+.product-container{
+   margin-top: 20px;
+}
+
+.links-container{
+   width: 100%;
+   display: flex;
+   padding: 10px 10vw;
+   justify-content: center;
+   list-style: none;
+   border-top: 1px solid #d1d1d1;
+}
+
+.link{
+   text-transform: capitalize;
+   padding: 0 10px;
+   margin: 0 5px ;
+   text-decoration: none;
+   color: #383838;
+   opacity: 0.5;
+   transition: .5s;
+}
+
+.link:hover{
+   opacity: 1;
+}
+
+.img-Plogo{
+   width: 350px;
+   height: 350px;
+   display: block;
+}
